@@ -30,13 +30,13 @@
 
 
 # using removeprefix instead of lstrip
-links = [
-    "www.blog.com",
-    "www.youtube.com",
-    "www.google.com",
-    "www.wikipedia.com"
-]
+# links = [
+#     "www.blog.com",
+#     "www.youtube.com",
+#     "www.google.com",
+#     "www.wikipedia.com"
+# ]
 
-for link in links:
-    print(link.removeprefix("www."))
-    print(link.lstrip("www."))
+# for link in links:
+#     print(link.removeprefix("www."))
+#     print(link.lstrip("www."))
