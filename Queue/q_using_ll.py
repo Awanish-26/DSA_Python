@@ -25,6 +25,34 @@ class queue:
     def dequeue(self):
         if self.is_empty():
             raise IndexError("Empty Queue")
-        elif self.front==self.rear:
-            
+        elif self.front == self.rear:
+            self.front = None
+            self.rear = None
+        else:
+            self.front = self.front.next
+        self.item_c -= 1
 
+    def get_front(self):
+        if self.is_empty():
+            raise IndexError("Empty Queue")
+        else:
+            return self.front.item
+
+    def get_front(self):
+        if self.is_empty():
+            raise IndexError("Empty Queue")
+        else:
+            return self.rear.item
+
+    def size(self):
+        return self.item_c
+
+
+t1 = queue()
+
+t1.enqueue(23)
+t1.enqueue(43)
+t1.enqueue(9)
+t1.enqueue(3)
+t1.enqueue(99)
+print(t1.size())
